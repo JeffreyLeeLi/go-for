@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os/exec"
+)
 
 func main() {
-	fmt.Println("hello world")
+	c := exec.Command("./go-for.bash")
+	fmt.Println(c.Output())
 }
