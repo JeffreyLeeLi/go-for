@@ -7,5 +7,6 @@ import (
 
 func main() {
 	c := exec.Command("./go-for.bash")
-	fmt.Println(c.Output())
+	bs, _ := c.Output()
+	fmt.Println(string(bs))
 }
